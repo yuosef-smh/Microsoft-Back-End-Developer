@@ -1,2 +1,15 @@
 # Microsoft-Back-End-Developer
 Microsoft Back-End Developer Course Project
+
+# ASP.NET Core Minimal API with Middleware
+
+This project demonstrates an ASP.NET Core Minimal API with custom middleware for global error handling, authentication, and logging.
+
+## Features
+
+- **Global Error Handling**: Middleware to handle exceptions and return appropriate error responses.
+- **Authentication**: Middleware to validate JWT tokens and restrict access to authenticated users.
+- **Logging**: Middleware to log HTTP requests and responses.
+
+# Generation, Debugging, and Optimization
+- This project was generated, debugged, and optimized with the assistance of Microsoft Copilot. Copilot helped ensure the code is efficient, handles errors globally, implements authentication, and includes comprehensive logging.
