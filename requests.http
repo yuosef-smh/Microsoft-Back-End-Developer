@@ -1,0 +1,43 @@
+### Create a User
+POST http://localhost:5228/users
+Content-Type: application/json
+Authorization: Bearer TestToken
+
+
+{
+  "userName": "Test User 2",
+  "userAge": 24
+}
+
+### Retrieve All Users
+GET http://localhost:5228/users
+Authorization: Bearer TestToken
+
+### Retrieve a User by ID
+GET http://localhost:5228/users/1
+Authorization: Bearer TestToken
+
+### Update a User
+PUT http://localhost:5228/users/1
+Content-Type: application/json
+Authorization: Bearer TestToken
+
+{
+  "userName": "John Doe",
+  "userAge": 25
+}
+
+### Delete a User
+DELETE http://localhost:5228/users/3
+Authorization: Bearer TestToken
+
+### Test Unauthunticated
+GET http://localhost:5228/users
+Authorization: Bearer test
+
+### Test Unauthunticated
+GET http://localhost:5228/users
+
+### Test Exceptions
+GET http://localhost:5228/exception-test/0
+Authorization: Bearer TestToken
